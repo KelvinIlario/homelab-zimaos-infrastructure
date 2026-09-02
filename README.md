@@ -21,23 +21,29 @@ O objetivo principal deste ecossistema é simular ambientes corporativos de alta
 
 Os serviços estão divididos em camadas lógicas para garantir isolamento de rede, persistência de dados e segurança operacional.
 
-                  ┌─────────────────────────────────────────────────┐
-                  │                 WAN / INTERNET                  │
-                  └───────────────────────┬─────────────────────────┘
-                                          │
-                   ┌──────────────────────┴───────────────────────┐
-                   │  Túneis & Segurança (Zero Trust / VPN / DNS) │
-                   │  Tailscale | Cloudflared | DuckDNS | Pi-hole │
-                   └──────────────────────┬───────────────────────┘
-                                          │
-   ┌──────────────────────────────────────┼──────────────────────────────────────┐
-   │                                      │                                      │
-┌──┴──────────────────────┐   ┌───────────┴───────────┐   ┌──────────────────────┴──┐
-│ Dados & Produtividade   │   │  Serviços Globais &   │   │ Dev & Gerenciamento de  │
-│ Nextcloud | MariaDB     │   │  Projetos / Aplicações│   │ Código                  │
-└─────────────────────────┘   │  Crafty Controller    │   │ Gitea                   │
-                              └───────────────────────┘   └─────────────────────────┘
-                                      ---
+                 ```mermaid
+graph TD
+    A["🌐 WAN / INTERNET"] --> B["🛡️ Túneis & Segurança<br>(Zero Trust / VPN / DNS)"]
+    
+    subgraph S1["Segurança & Acesso"]
+        B --- T1["Tailscale"]
+        B --- T2["Cloudflared"]
+        B --- T3["DuckDNS"]
+        B --- T4["Pi-hole"]
+    end
+
+    B --> C["💾 Dados & Produtividade"]
+    B --> D["⚡ Serviços Globais & Projetos"]
+    B --> E["💻 Dev & Código"]
+
+    subgraph S2["Aplicações"]
+        C --- C1["Nextcloud"]
+        C --- C2["MariaDB"]
+        
+        D --- D1["Crafty Controller"]
+        
+        E --- E1["Gitea"]
+    end
 
 ## 📋 Detalhamento Téchnico dos Containers
 
