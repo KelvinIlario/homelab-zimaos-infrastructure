@@ -1,11 +1,11 @@
 # 🚀 Home Server & Private Cloud Infrastructure (ZimaOS)
 
-<img width="1920" height="1380" alt="screencapture-192-168-31-79-2026-09-02-11_14_11" src="https://github.com/user-attachments/assets/3200393d-b4f1-4413-8c69-e4e29df2f164" />
-
-
 Bem-vindo ao repositório de documentação e arquitetura do meu **Home Lab / Private Cloud**. Este projeto consiste em um servidor de infraestrutura autohospedada rodando **ZimaOS**, focado em gerenciamento de rede, automação de processos, armazenamento privado, controle de acesso seguro e orquestração de serviços via **Docker**.
 
 O objetivo principal deste ecossistema é simular ambientes corporativos de alta disponibilidade, segurança cibernética, virtualização e gestão de infraestrutura de TI.
+
+
+<img width="1920" height="1380" alt="screencapture-192-168-31-79-2026-09-02-11_14_11" src="https://github.com/user-attachments/assets/4720b91c-1e27-4a3a-96db-54f4588d76f8" />
 
 ---
 
@@ -55,10 +55,16 @@ graph TD
 * **Pi-hole (`pihole/pihole`)**
   * **Finalidade Técnica:** Servidor DNS recursivo com bloqueio de anúncios e rastreadores em nível de rede (Sinkhole DNS).
   * **Aplicação Prática:** Aumenta a privacidade da rede interna, reduz tráfego indesejado e previne ataques de phishing bloqueando domínios maliciosos antes da resolução IP.
+ 
+  * <img width="1920" height="2728" alt="screencapture-192-168-31-79-8800-admin-2026-09-02-12_11_58" src="https://github.com/user-attachments/assets/82bb4de9-ad8d-4a00-9d26-b46dee91958e" />
+
 
 * **Tailscale (`tailscale/tailscale`)**
   * **Finalidade Técnica:** Malha de VPN privada (Mesh VPN) baseada no protocolo **WireGuard**.
   * **Aplicação Prática:** Permite acesso remoto seguro de qualquer lugar aos serviços internos do servidor sem expor portas publicamente no roteador (Zero Trust Access).
+ 
+  * <img width="1920" height="912" alt="screencapture-login-tailscale-login-2026-09-02-12_13_36" src="https://github.com/user-attachments/assets/25cf1ece-1d2c-40b9-bca4-c4322260af1d" />
+
 
 * **Cloudflared (`cloudflare/cloudflared`)**
   * **Finalidade Técnica:** Cliente de túnel seguro (Cloudflare Tunnels).
@@ -67,10 +73,16 @@ graph TD
 * **Duck DNS (`linuxserver/duckdns`)**
   * **Finalidade Técnica:** Provedor de DNS Dinâmico (DDNS).
   * **Aplicação Prática:** Atualiza dinamicamente o registro de IP público do servidor na web, garantindo conectividade contínua mesmo em links residenciais/comerciais com IP dinâmico.
+ 
+  * <img width="1920" height="912" alt="screencapture-duckdns-org-2026-09-02-12_13_53" src="https://github.com/user-attachments/assets/16c11da4-be0d-4abe-86a2-9db0c16d7391" />
+
 
 * **Registro.br Integrator / Dynamic Updater**
   * **Finalidade Técnica:** Automação de sincronização de IP público para domínios nacionais (`.br`).
   * **Aplicação Prática:** Mantém a resolução DNS de domínios personalizados mapeados diretamente para a infraestrutura do servidor.
+ 
+  * <img width="1920" height="3916" alt="screencapture-registro-br-2026-09-02-12_14_07" src="https://github.com/user-attachments/assets/0874068b-f9a4-4839-9b35-812cff5ce348" />
+
 
 ---
 
@@ -91,6 +103,9 @@ graph TD
 * **Gitea (`gitea/gitea`)**
   * **Finalidade Técnica:** Servidor Git leve autohospedado para controle de versão de código.
   * **Aplicação Prática:** Gerenciamento local de repositórios, pipelines de CI/CD simples e versionamento de arquivos de configuração (IaC), garantindo rastreabilidade de mudanças.
+ 
+  * <img width="1920" height="2336" alt="screencapture-192-168-31-79-3002-2026-09-02-12_12_15" src="https://github.com/user-attachments/assets/f22893a0-c9a1-4d23-abb1-d59981a68dd2" />
+
 
 * **Zima Cron (`zima-cron`)**
   * **Finalidade Técnica:** Agendador de tarefas e automação no nível do SO/Docker.
@@ -107,6 +122,9 @@ graph TD
 * **Crafty Controller (`arcaneos/crafty-web`)**
   * **Finalidade Técnica:** Painel de gerenciamento e orquestração de servidores de jogos baseados em Java/Bedrock.
   * **Aplicação Prática:** Gestão de processos, alocação dinâmica de memória RAM, controle de portas e automação de rotinas para servidores multiplayer.
+ 
+  * <img width="1920" height="912" alt="screencapture-192-168-31-79-8443-login-2026-09-02-12_13_23" src="https://github.com/user-attachments/assets/5c908a6e-556f-4932-8f35-76e995cdbac9" />
+
 
 * **PeerDrop (`peerdrop`)**
   * **Finalidade Técnica:** Aplicação de transferência rápida de arquivos via protocolo P2P/WebRTC na rede local.
