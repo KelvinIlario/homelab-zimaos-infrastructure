@@ -1,5 +1,8 @@
 # 🚀 Home Server & Private Cloud Infrastructure (ZimaOS)
 
+<img width="1920" height="1380" alt="screencapture-192-168-31-79-2026-09-02-11_14_11" src="https://github.com/user-attachments/assets/3200393d-b4f1-4413-8c69-e4e29df2f164" />
+
+
 Bem-vindo ao repositório de documentação e arquitetura do meu **Home Lab / Private Cloud**. Este projeto consiste em um servidor de infraestrutura autohospedada rodando **ZimaOS**, focado em gerenciamento de rede, automação de processos, armazenamento privado, controle de acesso seguro e orquestração de serviços via **Docker**.
 
 O objetivo principal deste ecossistema é simular ambientes corporativos de alta disponibilidade, segurança cibernética, virtualização e gestão de infraestrutura de TI.
