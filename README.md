@@ -110,10 +110,19 @@ graph TD
 * **Zima Cron (`zima-cron`)**
   * **Finalidade Técnica:** Agendador de tarefas e automação no nível do SO/Docker.
   * **Aplicação Prática:** Execução automatizada de rotinas de manutenção, rotação de logs e verificações periódicas do sistema.
+ 
+  * <img width="1920" height="912" alt="screencapture-192-168-31-79-modules-zima-cron-index-html-2026-09-02-12_20_39" src="https://github.com/user-attachments/assets/b694eb86-61b0-4b93-a82e-cc71cb78400d" />
+
 
 * **ZVM & Backup Utilities**
   * **Finalidade Técnica:** Módulos de virtualização e estratégias de backup contínuo do ZimaOS.
   * **Aplicação Prática:** Garantia de continuidade de negócios (*Disaster Recovery*), permitindo restauração rápida de volumes e configurações dos containers.
+ 
+  * <img width="1920" height="912" alt="screencapture-192-168-31-79-modules-zimaos-zvm-index-html-2026-09-02-12_21_18" src="https://github.com/user-attachments/assets/eddf9604-abf6-43bd-91e2-591e2948b15b" />
+
+ 
+  * <img width="1920" height="1380" alt="screencapture-192-168-31-79-2026-09-02-12_20_25" src="https://github.com/user-attachments/assets/d1564c02-ba97-4467-b384-69913e94dafa" />
+
 
 ---
 
@@ -129,6 +138,9 @@ graph TD
 * **PeerDrop (`peerdrop`)**
   * **Finalidade Técnica:** Aplicação de transferência rápida de arquivos via protocolo P2P/WebRTC na rede local.
   * **Aplicação Prática:** Compartilhamento direto de arquivos entre dispositivos sem necessidade de upload para servidores intermediários.
+ 
+  * <img width="1920" height="912" alt="screencapture-192-168-31-79-modules-icewhale-peerdrop-index-html-2026-09-02-12_21_02" src="https://github.com/user-attachments/assets/db3339cc-8fef-4974-a8b6-16aff15e3a09" />
+
 
 ---
 
