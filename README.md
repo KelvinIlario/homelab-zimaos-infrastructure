@@ -91,10 +91,14 @@ graph TD
 * **Nextcloud (`nextcloud`)**
   * **Finalidade Técnica:** Plataforma de armazenamento e nuvem privada para sincronização de arquivos, agenda e contatos.
   * **Aplicação Prática:** Substituto *self-hosted* corporativo para Google Drive/OneDrive, focado na soberania de dados, controle de versão de arquivos e compartilhamento seguro.
+ 
+  * <img width="1920" height="912" alt="screencapture-nextcloud-lonker-br-apps-files-files-2026-09-02-12_12_31" src="https://github.com/user-attachments/assets/8f0dc62a-5adc-4dfb-9cf8-2dbec98f8e86" />
+
 
 * **MariaDB (`mariadb`)**
   * **Finalidade Técnica:** Sistema Gerenciador de Banco de Dados Relacional (SGBD) baseado em SQL.
   * **Aplicação Prática:** Atua como backend persistente e otimizado para o Nextcloud e outros microsserviços do ambiente, utilizando volumes dedicados para integridade dos dados.
+  * **OBS: ** Não tem interface, utilizada em conjunto com nextcloud.
 
 ---
 
